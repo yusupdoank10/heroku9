@@ -1,20 +1,14 @@
-# Build
+# Embedded Jetty template application
 
-Build the project with
+This is a template for a web application that uses embedded Jetty. The sample code consists of a JSP (this page) and a simple servlet.
 
-    $ mvn install
+## Running the application locally
 
-# Configure
+First build with:
 
-You will need to set the `REPO` environment variable, so the execution wrapper script knows where to find the maven dependencies. For example:
+    $mvn clean install
 
-    $ export REPO=$HOME/.m2/repository
+Then run it with:
 
-# Run
-
-Now you can run your webapp with:
-
-    $ sh target/bin/webapp
-
-(the wrapper script is not executable by default).
+    $java -cp target/classes:target/dependency/* com.example.Main
 
