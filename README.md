@@ -1,5 +1,20 @@
-This quickstart will get you going with a Spring MVC Hibernate application that uses a Postgres database service, deployed to Heroku.
+# Build
 
-The is a demo application for the [Getting Started with Spring MVC Hibernate on Heroku](https://devcenter.heroku.com/articles/getting-started-with-spring-mvc-hibernate) guide.
+Build the project with
 
+    $ mvn install
+
+# Configure
+
+You will need to set the `REPO` environment variable, so the execution wrapper script knows where to find the maven dependencies. For example:
+
+    $ export REPO=$HOME/.m2/repository
+
+# Run
+
+Now you can run your webapp with:
+
+    $ sh target/bin/webapp
+
+(the wrapper script is not executable by default).
 
